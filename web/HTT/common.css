@@ -1,0 +1,41 @@
+*
+{
+    font-family: sans-serif;
+}
+
+body
+{
+    background-image: url("/Vectis/RESOURCES/warehouse-robots.jpg");
+    background-size: 100% 100%;
+    overflow-y: auto;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+tr>*
+{
+    border: 1px solid black;
+}
+
+#customerLogo
+{
+    display: inline-block;
+    position: absolute;
+    height: 2rem;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#crdLogo
+{
+    display: inline-block;
+    position: absolute;
+    height: 3rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,52 @@
+#searchBox
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30rem;
+    font-size: 150%;
+}
+
+#searchBox>*
+{
+    box-shadow: var(--shadow-3);
+    padding: 1rem;
+    background-color: white;
+}
+
+#searchBox>*>*
+{
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#searchBox>*>*:first-child
+{
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+
+#singleTrack
+{
+    margin-bottom: 1rem;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+table td
+{
+    padding: .5rem;
+}
+
+table td:first-child
+{
+    text-align: right;
+}

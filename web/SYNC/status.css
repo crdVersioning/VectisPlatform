@@ -1,0 +1,29 @@
+table
+{
+    border-collapse: collapse;
+}
+
+table tr>*
+{
+    padding: .5rem;
+    border: 1px solid black;
+    white-space: nowrap
+}
+
+td.Success
+{
+    color: white;
+    background-color: green;
+}
+
+td.Fail
+{
+    color: white;
+    background-color: red;
+}
+
+td.Null
+{
+    color: white;
+    background-color: orange;
+}

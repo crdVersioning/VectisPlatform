@@ -1,0 +1,47 @@
+table
+{
+    box-shadow: var(--shadow-3);
+    background-color: white;
+    width: calc(100% - 2rem);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+table td
+{
+    padding: .5rem;
+}
+
+table th
+{
+    font-weight: bold;
+    padding: .5rem;
+}
+
+#deliveryData
+{
+    margin-top: 6rem;
+}
+
+#deliveryData td:first-child
+{
+    text-align: right;
+}
+
+#historyData
+{
+    margin-bottom: 1rem;
+}
+
+#errorBox
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--shadow-3);
+    background-color: white;
+    padding: 1rem;
+    font-size: 200%;
+}

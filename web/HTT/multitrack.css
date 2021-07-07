@@ -1,0 +1,54 @@
+table
+{
+    box-shadow: var(--shadow-3);
+    background-color: white;
+    width: calc(100% - 2rem);
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+table td
+{
+    padding: .5rem;
+}
+
+table td.Minimum
+{
+    white-space: nowrap;
+    width: 1rem;
+}
+
+table th
+{
+    font-weight: bold;
+    padding: .5rem;
+}
+
+tbody tr
+{
+    cursor: pointer;
+}
+
+tbody tr:hover
+{
+    background-color: lightgreen;
+}
+
+#deliveries
+{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+#errorBox
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--shadow-3);
+    background-color: white;
+    padding: 1rem;
+    font-size: 200%;
+}

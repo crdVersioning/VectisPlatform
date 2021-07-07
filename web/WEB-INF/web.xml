@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!-- TRACK AND TRACE HISENSE -->
+    <servlet-mapping>
+        <servlet-name>HTT</servlet-name>
+        <url-pattern>/HTT</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>HTT</servlet-name>
+        <jsp-file>/HTT/landing.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HTTServlet</servlet-name>
+        <servlet-class>com.dps.htt.HTTServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HTTServlet</servlet-name>
+        <url-pattern>/HTTServlet/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- TRACK AND TRACE SCERNI -->
+    <servlet-mapping>
+        <servlet-name>SCERNITT</servlet-name>
+        <url-pattern>/STT</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SCERNITT</servlet-name>
+        <jsp-file>/TT/SCERNI/landing.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ScerniServlet</servlet-name>
+        <servlet-class>com.dps.tt.scerni.ScerniServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ScerniServlet</servlet-name>
+        <url-pattern>/ScerniServlet/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- TRACK AND TRACE VESIT -->
+    <servlet-mapping>
+        <servlet-name>VESITTT</servlet-name>
+        <url-pattern>/VTT</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>VESITTT</servlet-name>
+        <jsp-file>/TT/VESIT/landing.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>VesitServlet</servlet-name>
+        <servlet-class>com.dps.tt.vesit.VesitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VesitServlet</servlet-name>
+        <url-pattern>/VesitServlet/*</url-pattern>
+    </servlet-mapping>
+    
+    <!-- TRACK AND TRACE CEDI -->
+    <servlet-mapping>
+        <servlet-name>CEDITT</servlet-name>
+        <url-pattern>/CTT</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CEDITT</servlet-name>
+        <jsp-file>/TT/CEDI/landing.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CediServlet</servlet-name>
+        <servlet-class>com.dps.tt.cedi.CediServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CediServlet</servlet-name>
+        <url-pattern>/CediServlet/*</url-pattern>
+    </servlet-mapping>    
+
+    <!-- SINCRONIZZAZIONE -->
+    <servlet-mapping>
+        <servlet-name>SyncServlet</servlet-name>
+        <url-pattern>/syncservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SyncServlet</servlet-name>
+        <servlet-class>com.dps.sync.SyncServlet</servlet-class>
+    </servlet>
+    
+    <!-- RECUPERO POD -->
+    <servlet>
+        <servlet-name>Pods</servlet-name>
+        <servlet-class>com.dps.pods.Pods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Pods</servlet-name>
+        <url-pattern>/pods/*</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- DURATA SESSIONE -->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
